@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/mocha.css"/>
+</head>
+<body>
+<div id="mocha"></div>
+
+<script src="js/mocha.js"></script>
+<script src="js/should.js"></script>
+<script>
+  mocha.ui('bdd');
+  mocha.reporter('html');
+</script>
+<script src="cases/test.js"></script>
+<script>
+  setTimeout(function () {
+    mocha.run();
+  }, 100);
+</script>
+</body>
+</html>
